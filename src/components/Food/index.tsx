@@ -4,7 +4,7 @@ import { FiEdit3, FiTrash } from "react-icons/fi";
 import { Container } from "./styles";
 import api from "../../services/api";
 
-interface Food {
+export interface FoodType {
   id: number;
   name: string;
   image: string;
@@ -14,12 +14,12 @@ interface Food {
 }
 
 interface FoodProps {
-  food: Food;
+  food: FoodType;
   handleDelete: (foodId: number) => void;
-  handleEditFood: (food: Food) => void;
+  handleEditFood: (food: FoodType) => void;
 }
 
-function Food({ food, handleDelete, handleEditFood }: FoodProps) {
+export function Food({ food, handleDelete, handleEditFood }: FoodProps) {
   const [isAvailable, setIsAvailable] = useState(food.available);
 
   async function toggleAvailable() {
@@ -86,5 +86,3 @@ function Food({ food, handleDelete, handleEditFood }: FoodProps) {
     </Container>
   );
 }
-
-export default Food;
