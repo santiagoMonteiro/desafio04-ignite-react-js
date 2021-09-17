@@ -7,14 +7,6 @@ import Input from "../Input";
 import { FormHandles } from "@unform/core";
 
 import { FoodType } from "../Food"
-// export interface FoodType {
-//   id: number;
-//   name: string;
-//   image: string;
-//   description: string;
-//   price: number;
-//   available: boolean;
-// }
 
 interface ModalAddFoodProps {
   isOpen: boolean;
@@ -27,11 +19,6 @@ export function ModalAddFood({
   setIsOpen,
   handleAddFood,
 }: ModalAddFoodProps) {
-  // constructor(props) {
-  //   super(props);
-
-  //   this.formRef = createRef();
-  // }
 
   const formRef = useRef<FormHandles>(null);
 

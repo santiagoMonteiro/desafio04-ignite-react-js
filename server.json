@@ -1,3 +1,28 @@
 {
-  "foods": []
+  "foods": [
+    {
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png",
+      "name": "macarrão ao molho branco",
+      "price": "19.90",
+      "description": "novo prato",
+      "available": true,
+      "id": 1
+    },
+    {
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food2.png",
+      "name": "Veggie",
+      "price": "29.90",
+      "description": "macarrão com pimentão",
+      "available": true,
+      "id": 2
+    },
+    {
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png",
+      "name": "a la Camarón",
+      "price": "25.90",
+      "description": "Macarrão com vegetais e camarões",
+      "available": true,
+      "id": 3
+    }
+  ]
 }
